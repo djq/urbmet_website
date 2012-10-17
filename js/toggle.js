@@ -3,7 +3,7 @@ projects = {'nuvu-icon':'#nuvu-project', 'urbmet-icon':'#urbmet-project', 'rascl
 $(function() {
 	
 	// Hide Project container and children onload	
-	$(".project-container").hide().children().hide();
+	$(".project-container").hide();
 
 	// Hover and clickable effect of project thumbs
 	$(".project-icon")
@@ -22,7 +22,27 @@ $(function() {
        		console.log(projects[$(this).attr('id')]);
        		$(projects[$(this).attr('id')]).show();
        		$(".project-container").show(500);
+
+       		//scrollToAnchor('div');
+       		// not working       		
+       		$('#projects')[0].scrollIntoView(500);
+
     	}
     );
+
+    $("#close").click(function(){$(".project-container").hide(500);});
+   
 });
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -1,4 +1,7 @@
-/* colours: http://www.1stopsites.com/resources/colors-full.html */
+/* colours: http://www.1stopsites.com/resources/colors-full.html 
+	icons from here: http://www.tutorial9.net/downloads/108-mono-icons-huge-set-of-minimal-icons/
+	(free, no attribution required);
+*/
 
 /* General */
 body {
@@ -17,13 +20,13 @@ a {
 }
 
 p {
-	font-size: 24px;
+	font-size: 30px;
 	margin-top:5px;
-	margin-bottom:5px;	
+	margin-bottom:-2px;	
 }
 
 /* Siderule */
-.siderule{
+.logo{
 	position:absolute;
 	top:0px;
 	left:200px;
@@ -40,10 +43,9 @@ p {
 
 #weare {
 	font-size: 18px;
-	font-weight:200;	
-	margin-top:30px;
+	font-weight:200;		
 	padding-bottom:20px;
-	padding-top:40px;
+	padding-top:30px;
 	padding-left:100px;
 	padding-right:100px;
 	border-top:1px solid #ccc;
@@ -53,23 +55,12 @@ p {
 
 /* Divs */
 
-#work{
+.title{
 	width: 100%;
 	padding-top: 20px;
 	padding-bottom: -5px;
 	border-bottom:1px solid #ccc;
 	font-size: 15px;
-}
-
-#close{
-	position:relative;
-	top: 100px;
-	left: 10px;
-	width: 60px;
-	height: 25px;	
-	background: black;
-	font-size: 8px;
-	color: white;
 }
 
 #main{
@@ -83,9 +74,10 @@ p {
 }
 
 #footer{
-	position: absolute;
-	bottom: 40px;
+	position: relative;
+	bottom: 5%;
 	padding-top: 10px;
+	padding-bottom: 10px;
 	border-top:1px solid #ccc;
 	font-size: 15px;
 }
@@ -102,19 +94,16 @@ p {
 
 
 /* Main part */
-
-
 .content{
 	margin-top: 80px;
 	margin-left:210px;
 	width:950px;
 }
 
-
-
-/* Project icons */
+/* Project thumbnails */
 .project {
 	font-size: 25px;	
+	width: 80%;
 	position:relative;	
 }
 
@@ -155,8 +144,6 @@ p {
 	background-color: #4F4F4F;	
 }
 
-
-
 .project-image {
 	width: 100%;
 	height: 100%;
@@ -168,19 +155,58 @@ p {
 	top:0px;
 	left:0px;
 	width:100%;
-	padding-top:20px;
-	/*border-top:1px solid #ccc;*/
+	padding-top:20px;	
+}
+
+#close{	
+	top: 0px;
+	left: 820px;
+	width: 29px;
+	height: 29px;	
+	padding-top: 0px;	
 }
 
 /* Team info */
-.team-container {
-	position:relative;
-	top:0px;
-	left:0px;
+#team-container {
+	position:relative;	
 	width:100%;
 	margin-top:10px;
-	padding-top:10px;
-	border-top:1px solid #ccc;
-	margin-bottom:30px;
+	padding-top:10px;	
+	
 }
+
+.description {
+	position:relative;	
+	text-align: top;
+	padding-top:20px;	
+	padding-bottom:20px;	
+	font-size: 15px;	
+}
+
+#services{
+	height: 100px;
+}
+
+#people{
+	height: 50px;
+}
+
+/* Navigation */
+.c{
+	position:absolute; 
+	left:100px;
+	margin-left: 5px;
+  	border-radius: 50%;
+  	width: 20px;
+  	height: 20px;    
+}
+
+.c:hover{background-color:red; }
+
+#c_work{background-color:gray; top:100px;}
+#c_services{background-color:gray;top:150px;}
+#c_team{background-color:gray;top:200px;}
+
+
+
 

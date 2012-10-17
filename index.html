@@ -1,98 +1,121 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
 
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="Description" content="We analyze cities" />
+
 	<title>urbmet</title>
+
 	<link rel="stylesheet" href="style.css" type="text/css">
 	<link rel="stylesheet" href="icons.css" type="text/css">
+
 	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/raphael.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/toggle.js" type="text/javascript" charset="utf-8"></script>
 </head>
 
 <body>
-
-	<div class="siderule">
-		<img src="images/logo.png" alt="urbmet" style="height:60px; margin-top:30px;" />
-		<!--
-		<div class="nav">
-
-		<p>About</p>
-		<p>Projects</p>
-		<p>Contact</p>
-		
-		</div>
-		<div class="bottomrule">
-			urbmet | Dublin & Lisbon | <a href="mailto:info@urbmet.com">info@urbmet.com</a>
-		</div>
-		-->
-	</div>
-
 	
 	<div id="main">
 
+		<div class="logo">
+			<img src="images/logo.png" alt="urbmet" style="height:60px; margin-top:30px;" />		
+		</div>
+
+		<!-- experimenting with sidebar navigation
+		<div class="sidebar">
+			<div id="c_work" class="c"></div>	
+			<div id="c_services" class="c"></div>	
+			<div id="c_team" class="c"></div>			
+		</div> -->
+
 		<div class="content">
 
-		<div id="weare">	
-			We are an urban analysis firm that uses spatial data, mapping and visualization<br>to gain a better understanding of how cities work.
-		</div>
-
-		<div id="work">
-				<p>our work</p>
-		</div>
-
-
-		
-
-		<div class="project-container">
-			<div id="close">
-				<p>close</p>
-			</div>
-			
-			<div id="urbmet-project" class="project">
-			<p>Neighbourhood Visualizer</p>
-			<img src="images/urbmetMain1.png">
-			</div>
-			
-			<div id="rasclass-project" class="project">
-			<p>Raster image classification: rasclass</p>
-			<img src="images/rasclassMain1.png">
+			<div id="weare">	
+				We are an urban analysis firm that uses spatial data, mapping and visualization<br>to gain a better understanding of how cities work.
 			</div>
 
-			<div id="nuvu-project"class="project">
-			<p>Nuvu sudio: global warming</p>
-			<img src="images/nuvuMain1.png">
-			</div>
-		</div>
-	
-		<div class="project-icon-container">			
-			<div class="project-icon" id="urbmet-icon">
-			<img src="images/urbmet.png" class="project-image"><br>
-			<div class="project-title">urbmet.org</div>
-			</div>
-			
-			<div class="project-icon"  id="rasclass-icon">
-			<img src="images/streets.png" class="project-image"><br>
-			<div class="project-title">rasclass</div>
-			</div>
-
-			<div class="project-icon"  id="nuvu-icon">
-			<img src="images/nuvu.png" class="project-image"><br>
-			<div class="project-title">NuVu studio</div>
+			<div class="title" >
+					<a name="work_anchor" ><p>our work</p></a>
 			</div>				
-		</div>
-		<div style="clear:both"></div>
 
-	
-
-		<div class="team-container">
-		<p>Team</p>
-		David and Daniel<br>
-		</div>
-
-		<div id="footer">
-		urbmet | Dublin & Lisbon | <a href="mailto:info@urbmet.com">info@urbmet.com</a>
-		</div>
+			<div class="project-container">
+				<div id="close" class="project-container">
+					<img src="images/stop32.png" class="project-container" >				
+				</div>
 				
-		</div>
-	</div>
-	</div>
+				<div id="urbmet-project" class="project">
+					<p>Neighbourhood Visualizer</p>
+					<img src="images/urbmetMain1.png">
+				</div>
+				
+				<div id="rasclass-project" class="project">
+					<p>Raster image classification: rasclass</p>
+					<img src="images/rasclassMain1.png">
+				</div>
+
+				<div id="nuvu-project" class="project">
+					<p>Nuvu sudio: global warming</p>
+					<img src="images/nuvuMain1.png">
+				</div>
+			</div>	<!-- close project-container -->
+		
+			<div id="projects" class="project-icon-container">			
+				<div class="project-icon" id="urbmet-icon">
+					<img src="images/urbmet.png" class="project-image"><br>
+					<div class="project-title">urbmet.org</div>
+				</div>
+				
+				<div class="project-icon"  id="rasclass-icon">
+					<img src="images/streets.png" class="project-image"><br>
+					<div class="project-title">rasclass</div>
+				</div>
+
+				<div class="project-icon"  id="nuvu-icon">
+					<img src="images/nuvu.png" class="project-image"><br>
+					<div class="project-title">NuVu studio</div>
+				</div>	
+
+			</div> <!-- close project-icon-container -->	
+
+			<div style="clear:both"></div>		
+
+			<div id="team-container">
+				<div class="title" >
+					<a name="what" ><p>what we do</p></a>
+				</div>				
+
+				<div id="services" class="description" >				
+					We build custom analysis systems centered around urban issues using:
+					<ul class="bullets">						
+						<li class="bullet-item">state of the art statistical and spatial analysis methods</li>											
+						<li class="bullet-item">mostly open-source tools</li>
+						<li class="bullet-item">open-data</li>	
+					</ul>					
+					Our work has been featured in The Guardian, The New York Times and Ars Electronica.
+				</div>
+
+			</div> <!-- close team-container -->	
+
+			<div id="team-container">
+				<div class="title" >
+					<a name="who" ><p>who we are </p></a>
+				</div>				
+
+				<div id="people" class="description" >				
+					David and Daniel
+				</div>
+
+			</div> <!-- close team-container -->	
+
+			<div id="footer">
+			urbmet | Dublin & Lisbon | <a href="mailto:info@urbmet.com">info@urbmet.com</a>
+			</div> <!-- close footer -->			
+
+		</div> <!-- close content -->		
+		
+	</div> <!-- close main -->		
+
+</body> 	
+
 </html>
