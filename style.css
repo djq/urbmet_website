@@ -1,3 +1,5 @@
+/* colours: http://www.1stopsites.com/resources/colors-full.html */
+
 /* General */
 body {
 	background-color:none;
@@ -11,22 +13,24 @@ body {
 a {
 	text-decoration:none;
 	color:#222;
+
 }
 
 p {
 	font-size: 24px;
 	margin-top:5px;
-	margin-bottom:5px;
+	margin-bottom:5px;	
 }
+
 /* Siderule */
 .siderule{
 	position:absolute;
 	top:0px;
-	left:0px;
+	left:200px;
 	height:100%;
 	width:190px;
 	padding-left:10px;
-	//border-right:1px solid #ccc;
+	/*border-right:1px solid #ccc; */
 }
 
 #logo {
@@ -34,25 +38,41 @@ p {
  margin-top:30px;
 }
 
-.nav, .nav p {
-	top:100px;
-	height:10px;
-	font-size:16px;
-	padding-top:2px;
-	padding-left:2px;
+#weare {
+	font-size: 18px;
+	font-weight:200;	
+	margin-top:30px;
+	padding-bottom:20px;
+	padding-top:40px;
+	padding-left:100px;
+	padding-right:100px;
+	border-top:1px solid #ccc;
+	padding-bottom:30px;
+	/*border-bottom:1px solid #ccc;*/
 }
 
-.bottomrule {
-	position:absolute;
-	bottom:0px;
-	left:0px;
-	font-size:9px;
-	margin-bottom:10px;
-	margin-left:5px;
+/* Divs */
+
+#work{
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: -5px;
+	border-bottom:1px solid #ccc;
+	font-size: 15px;
 }
 
-/* Main part */
-.mainer{
+#close{
+	position:relative;
+	top: 100px;
+	left: 10px;
+	width: 60px;
+	height: 25px;	
+	background: black;
+	font-size: 8px;
+	color: white;
+}
+
+#main{
 	top:0px;
 	left:0px;
 	position:absolute;
@@ -62,33 +82,59 @@ p {
 	height:100%;
 }
 
-.content{
-	margin-left:210px;
-	width:830px;
+#footer{
+	position: absolute;
+	bottom: 40px;
+	padding-top: 10px;
+	border-top:1px solid #ccc;
+	font-size: 15px;
 }
 
-/* Info div */
-.weare {
-	font-size: 18px;
-	font-weight:200;
-	width:830px;
-	margin-top:30px;
-	padding-bottom:20px;
-	padding-top:10px;
-	border-top:1px solid #ccc;
-	padding-bottom:10px;
+
+/* classes */
+.nav, .nav p {
+	top:100px;
+	height:10px;
+	font-size:16px;
+	padding-top:2px;
+	padding-left:2px;
 }
+
+
+/* Main part */
+
+
+.content{
+	margin-top: 80px;
+	margin-left:210px;
+	width:950px;
+}
+
+
 
 /* Project icons */
+.project {
+	font-size: 25px;	
+	position:relative;	
+}
+
+.project-title{
+	text-align: left;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	color:white; 
+	padding-top:10px;
+}
+
 .project-icon-container {
 	position:relative;
 	top:0px;
 	left:0px;
 	width:100%;
-	margin-top:30px;
+	margin-top:10px;
 	padding-bottom:20px;
 	padding-top:10px;
-	border-top:1px solid #ccc;
+	
 }
 
 .project-icon {
@@ -96,22 +142,24 @@ p {
 	float:left;
 	top:0px;
 	padding:0px;
-	width:239px;
-	margin:5px;
+	width:295px;
+	margin-right:16px;
 	border:1px solid #ccc;
 	text-align:right;
 	cursor: pointer;
-	-webkit-transition: all 0.2s ease-in-out;
-	-moz-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
-	color: white;
-	background-color: gray;
+
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;	
+	background-color: #4F4F4F;	
 }
 
+
+
 .project-image {
-	width:239px;
-	height:150px;
+	width: 100%;
+	height: 100%;
 }
 
 /* Project info */
@@ -121,17 +169,11 @@ p {
 	left:0px;
 	width:100%;
 	padding-top:20px;
-	//border-top:1px solid #ccc;
-}
-
-.project {
-	position:relative;
-	width:100%;
-	//height:300px;
+	/*border-top:1px solid #ccc;*/
 }
 
 /* Team info */
-.team-containter {
+.team-container {
 	position:relative;
 	top:0px;
 	left:0px;
@@ -141,3 +183,4 @@ p {
 	border-top:1px solid #ccc;
 	margin-bottom:30px;
 }
+
