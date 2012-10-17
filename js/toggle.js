@@ -10,12 +10,12 @@ $(function() {
 		.mouseover(function(){
 			var src = $(this).children(".project-image").attr("src").match(/[^\.]+/) + "over.png";
 			$(this).children(".project-image").attr("src", src);
-			$(this).css('background-color', 'rgb(245,245,245)')
+			$(this).css('background-color', 'darkgray')
 		})
         .mouseout(function() {
 			var src = $(this).children(".project-image").attr("src").replace("over.png", ".png");
 			$(this).children(".project-image").attr("src", src);
-			$(this).css('background-color', '')
+			$(this).css('background-color', 'gray')
         })
         .click(function(){       		
        		$(".project-container").children().hide();

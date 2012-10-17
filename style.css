@@ -105,6 +105,8 @@ p {
 	-moz-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
+	color: white;
+	background-color: gray;
 }
 
 .project-image {
