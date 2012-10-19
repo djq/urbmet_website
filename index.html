@@ -9,16 +9,18 @@
 	<link rel="stylesheet" href="style.css" type="text/css">
 	<link rel="stylesheet" href="icons.css" type="text/css">
 
-	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/raphael.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>	
 	<script src="js/toggle.js" type="text/javascript" charset="utf-8"></script>
+
+	<!-- google web fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Chivo' rel='stylesheet' type='text/css'>	
 </head>
 
 <body>
 	
 	<div id="main">
 
-		<div class="logo">
+		<div id="logo">
 			<img src="images/logo.png" alt="urbmet" style="height:60px; margin-top:30px;" />		
 		</div>
 
@@ -85,14 +87,31 @@
 					<a name="what" ><p>what we do</p></a>
 				</div>				
 
-				<div id="services" class="description" >				
-					We build custom analysis systems centered around urban issues using:
+				<div id="text_left" class="description" >							
+					We combine our firms's strong theoretical knowledge on urban issues and sustainability with the practical knowledge associated
+					with making and implementing our solutions.
+
+					We make elegant analysis systems centered around urban issues using:
 					<ul class="bullets">						
-						<li class="bullet-item">state of the art statistical and spatial analysis methods</li>											
-						<li class="bullet-item">mostly open-source tools</li>
+						<li class="bullet-item">statistical and spatial analysis methods</li>											
+						<li class="bullet-item">open-source tools</li>
 						<li class="bullet-item">open-data</li>	
 					</ul>					
 					Our work has been featured in The Guardian, The New York Times and Ars Electronica.
+				</div>
+
+				<div id="text_right" class="description" >							
+				We specialize in the integration of a wide variety of tools used in many different disciplines. We conceptualize,
+				analyze and visualize problems using the following software, tools and languages:
+				<ul class="bullets">			
+					<li class="bullet-item"><strong>Spatial Analysis:</strong> PostGIS, QGIS, ArcGIS</li>
+					<li class="bullet-item"><strong>Statistical Analysis:</strong> R, SQL </li>
+					<li class="bullet-item"><strong>Data Visualization:</strong> Processing, Raphael, D3</li>
+					<li class="bullet-item"><strong>Dynamic Reporting:</strong> LaTeX, PHP</li>
+					<li class="bullet-item"><strong>Scripting:</strong> Python</li>	
+					<li class="bullet-item"><strong>Web-mapping:</strong> OpenLayers, MapServer</li>			
+					<li class="bullet-item"><strong>Complexity Modelling:</strong> Vensim, Netlogo</li>	
+				</ul>
 				</div>
 
 			</div> <!-- close team-container -->	
@@ -101,10 +120,16 @@
 				<div class="title" >
 					<a name="who" ><p>who we are </p></a>
 				</div>				
+			
+				<div id="text_left" class="description" >		
+				david										
+	
+				</div> <!-- people div -->	
 
-				<div id="people" class="description" >				
-					David and Daniel
-				</div>
+				<div id="text_right" class="description" >		
+				daniel										
+	
+				</div> <!-- people div -->		
 
 			</div> <!-- close team-container -->	
 

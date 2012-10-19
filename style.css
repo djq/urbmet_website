@@ -5,40 +5,33 @@
 
 /* General */
 body {
-	background-color:none;
-	color: #222;
-	font-family: Chivo, sans-serif;
+	background-color:none;	
+	font-family: arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-size: 18px;
 	font-weight:200;
 }
 
 a {
-	text-decoration:none;
-	color:#222;
-
+	text-decoration:none;	
+	color: 	#363636;
+	/*font-family: Chivo, sans-serif; */ /* not sure about this font */
 }
 
 p {
 	font-size: 30px;
 	margin-top:5px;
-	margin-bottom:-2px;	
+	margin-bottom:-2px;		
 }
 
 /* Siderule */
-.logo{
-	position:absolute;
-	top:0px;
-	left:200px;
-	height:100%;
-	width:190px;
-	padding-left:10px;
-	/*border-right:1px solid #ccc; */
-}
-
 #logo {
- height:60px;
- margin-top:30px;
+	position:relative;	
+	width:190px;	
+ 	height:60px;	
+	left:50%;
+	margin-left:-475px; 
+	top:0px;	
 }
 
 #weare {
@@ -60,7 +53,7 @@ p {
 	padding-top: 20px;
 	padding-bottom: -5px;
 	border-bottom:1px solid #ccc;
-	font-size: 15px;
+	font-size: 15px;	
 }
 
 #main{
@@ -79,7 +72,7 @@ p {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	border-top:1px solid #ccc;
-	font-size: 15px;
+	font-size: 13px;
 }
 
 
@@ -95,9 +88,11 @@ p {
 
 /* Main part */
 .content{
-	margin-top: 80px;
-	margin-left:210px;
-	width:950px;
+	position:relative;
+	margin-top: 26px;	
+	width:940px;
+	left:50%;
+	margin-left:-475px; 
 }
 
 /* Project thumbnails */
@@ -113,6 +108,7 @@ p {
 	padding-bottom: 10px;
 	color:white; 
 	padding-top:10px;
+	font-family: arial;
 }
 
 .project-icon-container {
@@ -132,7 +128,8 @@ p {
 	top:0px;
 	padding:0px;
 	width:295px;
-	margin-right:16px;
+	margin-left:8px;
+	margin-right:8px;
 	border:1px solid #ccc;
 	text-align:right;
 	cursor: pointer;
@@ -183,12 +180,23 @@ p {
 	font-size: 15px;	
 }
 
-#services{
-	height: 100px;
+#text_left{
+	position: relative;
+	float: left;
+	left: 0%;
+	width: 48%;	
 }
 
+#text_right{
+	position: relative;	
+	float: right;
+	right: 0%;
+	width: 48%;	
+}
+
+
 #people{
-	height: 50px;
+	height: 150px;
 }
 
 /* Navigation */

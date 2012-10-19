@@ -23,9 +23,8 @@ $(function() {
        		$(projects[$(this).attr('id')]).show();
        		$(".project-container").show(500);
 
-       		//scrollToAnchor('div');
-       		// not working       		
-       		$('#projects')[0].scrollIntoView(500);
+       		//scrollToAnchor('div');       		    		
+       		$('#projects')[0].scrollIntoView(); // needs to be slowed down
 
     	}
     );
