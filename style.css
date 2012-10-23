@@ -17,9 +17,10 @@ a {
 	color:#444;
 }
 
-p {
+h1 {
 	margin-top:0px;
 	font-size: 20px;
+	width:100%;
 }
 
 /* ---------- Wrapping containers ---------- */
@@ -114,7 +115,7 @@ p {
 	position:relative;
 	float:right;
 	width: 400px;
-	height:400px;
+	height:300px;
 	overflow:hidden;
 	border:1px solid #ccc;
 }

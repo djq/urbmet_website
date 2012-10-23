@@ -29,5 +29,19 @@ $(function() {
     	$(".project-container").hide(500);
 	    $('#main').animate({scrollTop: 0}, 500);	// Scroll back to top
     });
+    
+    $('#sliderurbmet').nivoSlider({
+        effect: 'fade', // Specify sets like: 'fold,fade,sliceDown'
+        pauseTime: 10000000 // How long each slide will show
+    });
+    $('#sliderrasclass').nivoSlider({
+        effect: 'fade', // Specify sets like: 'fold,fade,sliceDown'
+        pauseTime: 10000000 // How long each slide will show
+    });
+    $('#slidernuvu').nivoSlider({
+        effect: 'fade', // Specify sets like: 'fold,fade,sliceDown'
+        pauseTime: 10000000 // How long each slide will show
+    });
+
 });
 

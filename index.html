@@ -11,21 +11,16 @@
 	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>	
 	<script src="js/toggle.js" type="text/javascript" charset="utf-8"></script>
 
+	<script src="js/nivo-slider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="js/nivo-slider/nivo-slider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="js/nivo-slider/themes/light/light.css" type="text/css" media="screen" />
+	
 	<!-- google web fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-	
 	<div id="main">
-
-		<!-- experimenting with sidebar navigation
-		<div class="sidebar">
-			<div id="c_work" class="c"></div>	
-			<div id="c_services" class="c"></div>	
-			<div id="c_team" class="c"></div>			
-		</div> -->
-
 		<div id="content">
 
 			<!-- ---------------- HEAD OF PAGE ---------------- -->
@@ -44,23 +39,61 @@
 
 			<div class="project-container">				
 				<div id="urbmet-project" class="project">
-					<p>Neighbourhood Visualizer</p>
+					<div class="project-header">
+					<h1>Neighbourhood Visualizer</h1>
+					</div>
+					<div class="text_left">
+					Donec iaculis aliquam ipsum, vitae tincidunt justo faucibus sit amet. Nam facilisis, ligula a viverra vulputate, neque est malesuada orci, non porta purus est non massa. Morbi lobortis metus id est posuere imperdiet. Nam molestie, sem ut molestie tincidunt, turpis lectus accumsan nulla, ac sodales sem sapien at odio. Praesent velit justo, vehicula sit amet blandit adipiscing, adipiscing non leo. Etiam in luctus dui. Nulla imperdiet, mauris venenatis rutrum viverra, lorem nisi sagittis elit, sit amet rutrum nunc elit at felis. In sem dui, lacinia quis vehicula gravida, convallis ac turpis. Vivamus augue purus, cursus ac interdum ac, porta a tellus. Phasellus lobortis sodales est, in laoreet nunc aliquet non. Duis mollis erat id orci vehicula bibendum. Nullam accumsan tincidunt viverra. Nullam gravida adipiscing tempor. 
+					</div>
 					<div class="project-image-main">
-						<img src="images/urbmetMain1.png">
+						<div class="slider-wrapper theme-light">
+							<div id="sliderurbmet" class="nivoSlider">
+								<img src="images/urbmetMain1.png">
+								<img src="images/urbmetMain2.png">
+								<img src="images/urbmetMain3.png">
+								<img src="images/urbmetMain4.png">
+								<img src="images/urbmetover.png">
+							</div>
+						</div>
 					</div>
 				</div>
 				
 				<div id="rasclass-project" class="project">
-					<p>Raster image classification: rasclass</p>
+					<div class="project-header">
+						<h1>Raster image classification: rasclass</h1>
+					</div>
+					<div class="text_left">
+					Donec iaculis aliquam ipsum, vitae tincidunt justo faucibus sit amet. Nam facilisis, ligula a viverra vulputate, neque est malesuada orci, non porta purus est non massa. Morbi lobortis metus id est posuere imperdiet. Nam molestie, sem ut molestie tincidunt, turpis lectus accumsan nulla, ac sodales sem sapien at odio. Praesent velit justo, vehicula sit amet blandit adipiscing, adipiscing non leo. Etiam in luctus dui. Nulla imperdiet, mauris venenatis rutrum viverra, lorem nisi sagittis elit, sit amet rutrum nunc elit at felis. In sem dui, lacinia quis vehicula gravida, convallis ac turpis. Vivamus augue purus, cursus ac interdum ac, porta a tellus. Phasellus lobortis sodales est, in laoreet nunc aliquet non. Duis mollis erat id orci vehicula bibendum. Nullam accumsan tincidunt viverra. Nullam gravida adipiscing tempor. 
+					</div>
 					<div class="project-image-main">
-					<img src="images/rasclassMain1.png">
+						<div class="slider-wrapper theme-light">
+							<div id="sliderrasclass" class="nivoSlider">
+								<img src="images/rasclassMain1.png">
+								<img src="images/nuvuMain2.png">
+								<img src="images/nuvuMain3.png">
+							</div>
+						</div>
 					</div>
 				</div>
 
 				<div id="nuvu-project" class="project">
-					<p>Nuvu sudio: global warming</p>
+					<div class="project-header">
+						<h1>Nuvu sudio: global warming</h1>					
+					</div>
+					<div class="text_left">
+
+					Donec iaculis aliquam ipsum, vitae tincidunt justo faucibus sit amet. Nam facilisis, ligula a viverra vulputate, neque est malesuada orci, non porta purus est non massa. Morbi lobortis metus id est posuere imperdiet. Nam molestie, sem ut molestie tincidunt, turpis lectus accumsan nulla, ac sodales sem sapien at odio. Praesent velit justo, vehicula sit amet blandit adipiscing, adipiscing non leo. Etiam in luctus dui. Nulla imperdiet, mauris venenatis rutrum viverra, lorem nisi sagittis elit, sit amet rutrum nunc elit at felis. In sem dui, lacinia quis vehicula gravida, convallis ac turpis. Vivamus augue purus, cursus ac interdum ac, porta a tellus. Phasellus lobortis sodales est, in laoreet nunc aliquet non. Duis mollis erat id orci vehicula bibendum. Nullam accumsan tincidunt viverra. Nullam gravida adipiscing tempor. 
+					</div>
 					<div class="project-image-main">
-						<img src="images/nuvuMain1.png">
+						<div class="slider-wrapper theme-light">
+							<div id="slidernuvu" class="nivoSlider">
+								<img src="images/nuvuMain1.png">
+								<img src="images/nuvuMain2.png">
+								<img src="images/nuvuMain3.png">
+								<img src="images/nuvuMain4.png">
+								<img src="images/nuvuMain5.png">								
+							</div>
+						</div>
 					</div>
 				</div>
 				
@@ -88,8 +121,8 @@
 			</div> <!-- close project-icon-container -->	
 
 			<!-- ---------------- WHAT WE DO ---------------- -->
-			<div style="clear:both;"></div>
-			<div class="title" > what we do </div>
+			<div style="clear:both"></div>
+			<div class="title"> what we do </div>
 
 			<div class="text_left">							
 				We combine our firms's strong theoretical knowledge on urban issues and sustainability with the practical knowledge associated
