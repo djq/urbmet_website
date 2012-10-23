@@ -1,0 +1,187 @@
+/* colours: http://www.1stopsites.com/resources/colors-full.html 
+	icons from here: http://www.tutorial9.net/downloads/108-mono-icons-huge-set-of-minimal-icons/
+	(free, no attribution required);
+*/
+/* ---------- General setup ---------- */
+body {
+	background-color:none;	
+	font-family: 'Open Sans', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-size: 14px;
+	font-weight:400;
+	color:#444;
+}
+
+a {
+	text-decoration:none;
+	color:#444;
+}
+
+h1 {
+	margin-top:0px;
+	font-size: 20px;
+	width:100%;
+}
+
+/* ---------- Wrapping containers ---------- */
+#main{
+	top:0px;
+	left:0px;
+	position:absolute;
+	width:100%;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	height:100%;
+}
+
+#content{
+	position:relative;
+	width:850px;
+	left:50%;
+	margin-left:-425px; 
+}
+
+/* ---------- Header, footer, weare ---------- */
+#logo {
+	margin-top:20px;
+	margin-bottom:20px;
+	position:relative;	
+	left:0px;
+	top:0px;	
+ 	height:60px;
+ 	border-bottom:1px solid #ccc;
+}
+
+#logo-img {
+	height:60px;
+	font-size:40px;
+	font-weight:600;
+}
+
+#weare {
+	font-size: 18px;
+}
+
+#footer{
+	position: relative;
+	margin-top:30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top:1px solid #ccc;
+	font-size: 13px;
+}
+
+/* ---------- Classes ---------- */
+.title{
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	border-bottom:1px solid #ccc;
+	font-size: 30px;
+	clear:both;
+}
+.text_left{
+	position: relative;
+	float: left;
+	left: 0%;
+	width: 48%;	
+}
+.text_right{
+	position: relative;	
+	float: right;
+	top:0px;
+	right: 0%;
+	width: 48%;	
+}
+
+/* ---------- Project pages ---------- */
+.project-container {
+	position:relative;
+	top:0px;
+	left:0px;
+	width:100%;
+}
+
+.project {
+	width: 97%;
+	position:relative;
+	float:left;
+	padding-bottom:20px;
+	padding-left:1.5%;
+	padding-right:1.5%;
+}
+
+.project-image-main {
+	position:relative;
+	float:right;
+	width: 400px;
+	height:300px;
+	overflow:hidden;
+	border:1px solid #ccc;
+}
+
+#close{	
+	position:absolute;
+	top: 0px;
+	right: 0px;
+	cursor: pointer;
+	/*border-radius:10px;
+	background-color:#444;
+	color:#fff;
+	text-align:center;*/
+}
+
+
+/* ---------- Project icons ---------- */
+.project-icon-container {
+	position:relative;
+	top:0px;
+	left:0px;
+	width:100%;
+}
+
+.project-icon {
+	position:relative;
+	float:left;
+	width:30%;
+	margin-left:1%;
+	margin-right:1%;
+	padding:0.5%;
+	border:1px solid #ccc;
+	cursor: pointer;
+	transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+}
+
+.project-title{
+	padding-left: 10px;
+	padding-bottom: 5px;
+	padding-top:10px;
+	font-weight:600;
+}
+
+.project-image {
+	width: 100%;
+}
+
+/* ---------- Navigation ---------- */
+.c{
+	position:absolute; 
+	left:100px;
+	margin-left: 5px;
+  	border-radius: 50%;
+  	width: 20px;
+  	height: 20px;    
+}
+
+.c:hover{background-color:red; }
+
+#c_work{background-color:gray; top:100px;}
+#c_services{background-color:gray;top:150px;}
+#c_team{background-color:gray;top:200px;}
+
+
+
+
