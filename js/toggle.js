@@ -20,11 +20,14 @@ $(function() {
         .click(function(){       		
        		$(".project-container").children().hide();
        		$(projects[$(this).attr('id')]).show();								// Pull the right project
-       		$(".project-container").show(800); 									// Open project container
-		    $('#main').animate({scrollTop: $('#ourwork').offset().top}, 500);	// Scroll
+       		$(".project-container").show(500); 									// Open project container
+		    $('#main').animate({scrollTop: $('#ourwork').offset().top + $('#main').scrollTop()}, 500);	// Scroll
 		    $("#close").show();
 		});
 
-    $("#close").click(function(){$(".project-container").hide(500);});
+    $("#close").click(function(){
+    	$(".project-container").hide(500);
+	    $('#main').animate({scrollTop: 0}, 500);	// Scroll back to top
+    });
 });
 
