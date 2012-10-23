@@ -10,38 +10,21 @@ $(function() {
 		.mouseover(function(){
 			var src = $(this).children(".project-image").attr("src").match(/[^\.]+/) + "over.png";
 			$(this).children(".project-image").attr("src", src);
-			$(this).css('background-color', '#363636')
+			$(this).css('background-color', '#ddd')
 		})
         .mouseout(function() {
 			var src = $(this).children(".project-image").attr("src").replace("over.png", ".png");
 			$(this).children(".project-image").attr("src", src);
-			$(this).css('background-color', '#4F4F4F')
+			$(this).css('background-color', '')
         })
         .click(function(){       		
        		$(".project-container").children().hide();
-       		console.log(projects[$(this).attr('id')]);
-       		$(projects[$(this).attr('id')]).show();
-       		$(".project-container").show(500);
-
-       		//scrollToAnchor('div');       		    		
-       		$('#projects')[0].scrollIntoView(); // needs to be slowed down
-
-    	}
-    );
+       		$(projects[$(this).attr('id')]).show();								// Pull the right project
+       		$(".project-container").show(800); 									// Open project container
+		    $('#main').animate({scrollTop: $('#ourwork').offset().top}, 500);	// Scroll
+		    $("#close").show();
+		});
 
     $("#close").click(function(){$(".project-container").hide(500);});
-   
 });
-
-
-
-
-
-
-
-
-
-
-
-
 

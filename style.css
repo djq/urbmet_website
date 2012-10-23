@@ -2,60 +2,27 @@
 	icons from here: http://www.tutorial9.net/downloads/108-mono-icons-huge-set-of-minimal-icons/
 	(free, no attribution required);
 */
-
-/* General */
+/* ---------- General setup ---------- */
 body {
 	background-color:none;	
-	font-family: arial, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	-webkit-font-smoothing: antialiased;
-	font-size: 18px;
-	font-weight:200;
+	font-size: 14px;
+	font-weight:400;
+	color:#444;
 }
 
 a {
-	text-decoration:none;	
-	color: 	#363636;
-	/*font-family: Chivo, sans-serif; */ /* not sure about this font */
+	text-decoration:none;
+	color:#444;
 }
 
 p {
-	font-size: 30px;
-	margin-top:5px;
-	margin-bottom:-2px;		
+	margin-top:0px;
+	font-size: 20px;
 }
 
-/* Siderule */
-#logo {
-	position:relative;	
-	width:190px;	
- 	height:60px;	
-	left:50%;
-	margin-left:-475px; 
-	top:0px;	
-}
-
-#weare {
-	font-size: 18px;
-	font-weight:200;		
-	padding-bottom:20px;
-	padding-top:30px;
-	padding-left:100px;
-	padding-right:100px;
-	border-top:1px solid #ccc;
-	padding-bottom:30px;
-	/*border-bottom:1px solid #ccc;*/
-}
-
-/* Divs */
-
-.title{
-	width: 100%;
-	padding-top: 20px;
-	padding-bottom: -5px;
-	border-bottom:1px solid #ccc;
-	font-size: 15px;	
-}
-
+/* ---------- Wrapping containers ---------- */
 #main{
 	top:0px;
 	left:0px;
@@ -66,140 +33,139 @@ p {
 	height:100%;
 }
 
+#content{
+	position:relative;
+	width:850px;
+	left:50%;
+	margin-left:-425px; 
+}
+
+/* ---------- Header, footer, weare ---------- */
+#logo {
+	margin-top:20px;
+	margin-bottom:20px;
+	position:relative;	
+	left:0px;
+	top:0px;	
+ 	height:60px;
+ 	border-bottom:1px solid #ccc;
+}
+
+#logo-img {
+	height:60px;
+	font-size:40px;
+	font-weight:600;
+}
+
+#weare {
+	font-size: 18px;
+}
+
 #footer{
 	position: relative;
-	bottom: 5%;
+	margin-top:30px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	border-top:1px solid #ccc;
 	font-size: 13px;
 }
 
-
-/* classes */
-.nav, .nav p {
-	top:100px;
-	height:10px;
-	font-size:16px;
-	padding-top:2px;
-	padding-left:2px;
-}
-
-
-/* Main part */
-.content{
-	position:relative;
-	margin-top: 26px;	
-	width:940px;
-	left:50%;
-	margin-left:-475px; 
-}
-
-/* Project thumbnails */
-.project {
-	font-size: 25px;	
-	width: 80%;
-	position:relative;	
-}
-
-.project-title{
-	text-align: left;
-	padding-left: 10px;
-	padding-bottom: 10px;
-	color:white; 
-	padding-top:10px;
-	font-family: arial;
-}
-
-.project-icon-container {
-	position:relative;
-	top:0px;
-	left:0px;
-	width:100%;
-	margin-top:10px;
-	padding-bottom:20px;
-	padding-top:10px;
-	
-}
-
-.project-icon {
-	position:relative;
-	float:left;
-	top:0px;
-	padding:0px;
-	width:295px;
-	margin-left:8px;
-	margin-right:8px;
-	border:1px solid #ccc;
-	text-align:right;
-	cursor: pointer;
-
-	-webkit-transition: all 0.1s ease-in-out;
-	-moz-transition: all 0.1s ease-in-out;
-	-o-transition: all 0.1s ease-in-out;
-	transition: all 0.1s ease-in-out;	
-	background-color: #4F4F4F;	
-}
-
-.project-image {
+/* ---------- Classes ---------- */
+.title{
 	width: 100%;
-	height: 100%;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	border-bottom:1px solid #ccc;
+	font-size: 30px;
+	clear:both;
 }
-
-/* Project info */
-.project-container {
-	position:relative;
-	top:0px;
-	left:0px;
-	width:100%;
-	padding-top:20px;	
-}
-
-#close{	
-	top: 0px;
-	left: 820px;
-	width: 29px;
-	height: 29px;	
-	padding-top: 0px;	
-}
-
-/* Team info */
-#team-container {
-	position:relative;	
-	width:100%;
-	margin-top:10px;
-	padding-top:10px;	
-	
-}
-
-.description {
-	position:relative;	
-	text-align: top;
-	padding-top:20px;	
-	padding-bottom:20px;	
-	font-size: 15px;	
-}
-
-#text_left{
+.text_left{
 	position: relative;
 	float: left;
 	left: 0%;
 	width: 48%;	
 }
-
-#text_right{
+.text_right{
 	position: relative;	
 	float: right;
+	top:0px;
 	right: 0%;
 	width: 48%;	
 }
 
-
-#people{
-	height: 150px;
+/* ---------- Project pages ---------- */
+.project-container {
+	position:relative;
+	top:0px;
+	left:0px;
+	width:100%;
 }
 
-/* Navigation */
+.project {
+	width: 100%;
+	position:relative;
+	float:left;
+	padding-bottom:20px;
+	padding-left:1.5%;
+	padding-right:1.5%;
+}
+
+.project-image-main {
+	position:relative;
+	float:right;
+	width: 400px;
+	height:400px;
+	overflow:hidden;
+	border:1px solid #ccc;
+}
+
+#close{	
+	position:absolute;
+	top: 0px;
+	right: 0px;
+	cursor: pointer;
+	/*border-radius:10px;
+	background-color:#444;
+	color:#fff;
+	text-align:center;*/
+}
+
+
+/* ---------- Project icons ---------- */
+.project-icon-container {
+	position:relative;
+	top:0px;
+	left:0px;
+	width:100%;
+}
+
+.project-icon {
+	position:relative;
+	float:left;
+	width:30%;
+	margin-left:1%;
+	margin-right:1%;
+	padding:0.5%;
+	border:1px solid #ccc;
+	cursor: pointer;
+	transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+}
+
+.project-title{
+	padding-left: 10px;
+	padding-bottom: 5px;
+	padding-top:10px;
+	font-weight:600;
+}
+
+.project-image {
+	width: 100%;
+}
+
+/* ---------- Navigation ---------- */
 .c{
 	position:absolute; 
 	left:100px;

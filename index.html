@@ -7,22 +7,17 @@
 	<title>urbmet</title>
 
 	<link rel="stylesheet" href="style.css" type="text/css">
-	<link rel="stylesheet" href="icons.css" type="text/css">
 
 	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>	
 	<script src="js/toggle.js" type="text/javascript" charset="utf-8"></script>
 
 	<!-- google web fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Chivo' rel='stylesheet' type='text/css'>	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
 	
 	<div id="main">
-
-		<div id="logo">
-			<img src="images/logo.png" alt="urbmet" style="height:60px; margin-top:30px;" />		
-		</div>
 
 		<!-- experimenting with sidebar navigation
 		<div class="sidebar">
@@ -31,116 +26,118 @@
 			<div id="c_team" class="c"></div>			
 		</div> -->
 
-		<div class="content">
+		<div id="content">
+
+			<!-- ---------------- HEAD OF PAGE ---------------- -->
+			<div id="logo">
+				<img id="logo-img" src="images/logo.png" alt="urbmet"/>		
+			</div>
 
 			<div id="weare">	
 				We are an urban analysis firm that uses spatial data, mapping and visualization<br>to gain a better understanding of how cities work.
 			</div>
 
-			<div class="title" >
-					<a name="work_anchor" ><p>our work</p></a>
-			</div>				
+			<!-- ---------------- OUR WORK - PROJECTS ---------------- -->
+			<div id="ourwork" class="title" >
+				our work
+			</div>
 
-			<div class="project-container">
-				<div id="close" class="project-container">
-					<img src="images/stop32.png" class="project-container" >				
-				</div>
-				
+			<div class="project-container">				
 				<div id="urbmet-project" class="project">
 					<p>Neighbourhood Visualizer</p>
-					<img src="images/urbmetMain1.png">
+					<div class="project-image-main">
+						<img src="images/urbmetMain1.png">
+					</div>
 				</div>
 				
 				<div id="rasclass-project" class="project">
 					<p>Raster image classification: rasclass</p>
+					<div class="project-image-main">
 					<img src="images/rasclassMain1.png">
+					</div>
 				</div>
 
 				<div id="nuvu-project" class="project">
 					<p>Nuvu sudio: global warming</p>
-					<img src="images/nuvuMain1.png">
+					<div class="project-image-main">
+						<img src="images/nuvuMain1.png">
+					</div>
+				</div>
+				
+				<div id="close">
+					<img src="images/cancel.png">
 				</div>
 			</div>	<!-- close project-container -->
-		
+
+			<div style="clear:both;"></div>		
 			<div id="projects" class="project-icon-container">			
 				<div class="project-icon" id="urbmet-icon">
 					<img src="images/urbmet.png" class="project-image"><br>
-					<div class="project-title">urbmet.org</div>
+					<div class="project-title">URBMET.ORG</div>
 				</div>
 				
 				<div class="project-icon"  id="rasclass-icon">
 					<img src="images/streets.png" class="project-image"><br>
-					<div class="project-title">rasclass</div>
+					<div class="project-title">RASCLASS</div>
 				</div>
 
 				<div class="project-icon"  id="nuvu-icon">
 					<img src="images/nuvu.png" class="project-image"><br>
-					<div class="project-title">NuVu studio</div>
+					<div class="project-title">NUVU STUDIO</div>
 				</div>	
-
 			</div> <!-- close project-icon-container -->	
 
-			<div style="clear:both"></div>		
+			<!-- ---------------- WHAT WE DO ---------------- -->
+			<div style="clear:both;"></div>
+			<div class="title" > what we do </div>
 
-			<div id="team-container">
-				<div class="title" >
-					<a name="what" ><p>what we do</p></a>
-				</div>				
+			<div class="text_left">							
+				We combine our firms's strong theoretical knowledge on urban issues and sustainability with the practical knowledge associated
+				with making and implementing our solutions.
 
-				<div id="text_left" class="description" >							
-					We combine our firms's strong theoretical knowledge on urban issues and sustainability with the practical knowledge associated
-					with making and implementing our solutions.
+				We make elegant analysis systems centered around urban issues using:
+				<ul class="bullets">						
+					<li class="bullet-item">statistical and spatial analysis methods</li>											
+					<li class="bullet-item">open-source tools</li>
+					<li class="bullet-item">open-data</li>	
+				</ul>					
+				Our work has been featured in The Guardian, The New York Times and Ars Electronica.
+			</div>
 
-					We make elegant analysis systems centered around urban issues using:
-					<ul class="bullets">						
-						<li class="bullet-item">statistical and spatial analysis methods</li>											
-						<li class="bullet-item">open-source tools</li>
-						<li class="bullet-item">open-data</li>	
-					</ul>					
-					Our work has been featured in The Guardian, The New York Times and Ars Electronica.
-				</div>
+			<div class="text_right">							
+			We specialize in the integration of a wide variety of tools used in many different disciplines. We conceptualize,
+			analyze and visualize problems using the following software, tools and languages:
+			<ul class="bullets">			
+				<li class="bullet-item"><strong>Spatial Analysis:</strong> PostGIS, QGIS, ArcGIS</li>
+				<li class="bullet-item"><strong>Statistical Analysis:</strong> R, SQL </li>
+				<li class="bullet-item"><strong>Data Visualization:</strong> Processing, Raphael, D3</li>
+				<li class="bullet-item"><strong>Dynamic Reporting:</strong> LaTeX, PHP</li>
+				<li class="bullet-item"><strong>Scripting:</strong> Python</li>	
+				<li class="bullet-item"><strong>Web-mapping:</strong> OpenLayers, MapServer</li>			
+				<li class="bullet-item"><strong>Complexity Modelling:</strong> Vensim, Netlogo</li>	
+			</ul>
+			</div>
 
-				<div id="text_right" class="description" >							
-				We specialize in the integration of a wide variety of tools used in many different disciplines. We conceptualize,
-				analyze and visualize problems using the following software, tools and languages:
-				<ul class="bullets">			
-					<li class="bullet-item"><strong>Spatial Analysis:</strong> PostGIS, QGIS, ArcGIS</li>
-					<li class="bullet-item"><strong>Statistical Analysis:</strong> R, SQL </li>
-					<li class="bullet-item"><strong>Data Visualization:</strong> Processing, Raphael, D3</li>
-					<li class="bullet-item"><strong>Dynamic Reporting:</strong> LaTeX, PHP</li>
-					<li class="bullet-item"><strong>Scripting:</strong> Python</li>	
-					<li class="bullet-item"><strong>Web-mapping:</strong> OpenLayers, MapServer</li>			
-					<li class="bullet-item"><strong>Complexity Modelling:</strong> Vensim, Netlogo</li>	
-				</ul>
-				</div>
+			<!-- ---------------- WHE WE ARE ---------------- -->
+			<div style="clear:both;"></div>
+			<div class="title" > who we are </div>				
+		
+			<div class="text_left">		
+			david									
+			</div> <!-- people div -->	
 
-			</div> <!-- close team-container -->	
-
-			<div id="team-container">
-				<div class="title" >
-					<a name="who" ><p>who we are </p></a>
-				</div>				
+			<div class="text_right">		
+			daniel										
+			</div> <!-- people div -->		
 			
-				<div id="text_left" class="description" >		
-				david										
-	
-				</div> <!-- people div -->	
-
-				<div id="text_right" class="description" >		
-				daniel										
-	
-				</div> <!-- people div -->		
-
-			</div> <!-- close team-container -->	
-
+			<!-- ---------------- FOOTER ---------------- -->
+			<div style="clear:both;"></div>
 			<div id="footer">
 			urbmet | Dublin & Lisbon | <a href="mailto:info@urbmet.com">info@urbmet.com</a>
-			</div> <!-- close footer -->			
+			</div> <!-- close footer -->		
 
 		</div> <!-- close content -->		
 		
 	</div> <!-- close main -->		
-
 </body> 	
-
 </html>
